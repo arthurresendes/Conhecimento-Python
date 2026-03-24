@@ -6,15 +6,18 @@ def apresentacao():
     print("="*50)
 
 def menu():
+    apresentacao()
     while True:
         print("Escolha uma das operações: ")
-        print("[1] - Adcionar produto")
+        print("[1] - Adicionar produto")
         print("[2] - Ver produtos")
         print("[3] - Atualizar estoque")
         print("[4] - Deletar produto")
         print("[5] - Sair")
+        
+        opcao = 0
         try:
-            opcao = int(input("Digite um dos valores: "))
+            opcao = int(input("Digite uma das opções pelo indice: "))
         except:
             print("Digite um valor inteiro....")
         
@@ -33,7 +36,7 @@ def menu():
             print("Opção invalida....")
 
 def informacoesProd():
-    nome = input("Digite o nome do produto: ").upper()
+    nome = input("Digite o nome do produto: ").title()
     while True:
         try:
             preco = int(input("Digite o preço do produto: "))
@@ -73,5 +76,19 @@ def upProd():
                     estoqueProd["produtos"][indice] = [nome, preco, quantidade]
                     break
         except:
-            print("Digite um preço valido..")
+            print("Digite um indice valido..")
 
+def delProd():
+    seeProd()
+    while True:
+        try:
+            indice = int(input("Digite o indice que quer deletar o produto: ")) - 1
+            if isinstance(indice,int) and indice < len(estoqueProd["produtos"]) and indice > 0:
+                    del estoqueProd["produtos"][indice]
+                    break
+        except:
+            print("Digite um indice valido..")
+
+
+if __name__ == "__main__":
+    menu()
