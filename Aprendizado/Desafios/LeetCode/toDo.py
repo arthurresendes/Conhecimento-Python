@@ -8,7 +8,7 @@ def apresentacao():
 def menu():
     apresentacao()
     while True:
-        print("Escolha uma das operações: ")
+        print("-- Escolha uma das operações: ")
         print("[1] - Adicionar produto")
         print("[2] - Ver produtos")
         print("[3] - Atualizar estoque")
@@ -39,8 +39,8 @@ def informacoesProd():
     nome = input("Digite o nome do produto: ").title()
     while True:
         try:
-            preco = int(input("Digite o preço do produto: "))
-            if isinstance(preco,int):
+            preco = float(input("Digite o preço do produto: "))
+            if isinstance(preco,float):
                 break
         except:
             print("Digite um preço valido..")
@@ -63,6 +63,9 @@ def addProd():
     print("Produto adicionado com sucesso...")
 
 def seeProd():
+    if not estoqueProd["produtos"]:
+        print("Sem produtos...")
+        menu()
     for i, item in enumerate(estoqueProd['produtos'], start=1):
         print(f"{i} - Nome: {item[0]}, Preço: {item[1]}, Quantidade: {item[2]}")
 
@@ -71,10 +74,12 @@ def upProd():
     while True:
         try:
             indice = int(input("Digite o indice que quer atualizar o produto: ")) - 1
-            if isinstance(indice,int) and indice < len(estoqueProd["produtos"]) and indice > 0:
+            if isinstance(indice,int) and indice < len(estoqueProd["produtos"]) and indice >= 0:
                     nome,preco,quantidade = informacoesProd()
                     estoqueProd["produtos"][indice] = [nome, preco, quantidade]
                     break
+            else:
+                print("Indice não encontrado")
         except:
             print("Digite um indice valido..")
 
@@ -83,9 +88,11 @@ def delProd():
     while True:
         try:
             indice = int(input("Digite o indice que quer deletar o produto: ")) - 1
-            if isinstance(indice,int) and indice < len(estoqueProd["produtos"]) and indice > 0:
+            if isinstance(indice,int) and indice < len(estoqueProd["produtos"]) and indice >= 0:
                     del estoqueProd["produtos"][indice]
                     break
+            else:
+                print("Indice não encontrado")
         except:
             print("Digite um indice valido..")
 
