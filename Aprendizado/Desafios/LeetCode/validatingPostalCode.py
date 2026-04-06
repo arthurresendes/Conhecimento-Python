@@ -21,7 +21,8 @@ def validation(number: int):
     else:
         return "Sem digitos alternativos"
 
-print(validation(121426))
-print(validation(523563))
-print(validation(552523))
-print(validation(121202))
+if __name__ == "__main__":
+    print(validation(121426))
+    print(validation(523563))
+    print(validation(552523))
+    print(validation(121202))
