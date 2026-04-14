@@ -1,7 +1,6 @@
 class Solution:
     def multiply(self, num1: str, num2: str) -> str:
-        res = int(num1) * int(num2)
-        return f' "{str(res)}" '
+        return f' "{str(int(num1) * int(num2))}" '
 
 
 if __name__ == "__main__":
