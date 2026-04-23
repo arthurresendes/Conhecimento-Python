@@ -4,7 +4,8 @@ class Solution:
         for i in head:
             if i not in lista_res:
                 lista_res.append(i)
-        
+        for i in range(len(head) - len(lista_res)):
+            lista_res.append("_")
         return lista_res
 
 
