@@ -36,6 +36,7 @@ while True:
         print(f"Foto salva em: {nome_foto}")
         break
         
+    # ESC
     elif key == 27:
         break
 
