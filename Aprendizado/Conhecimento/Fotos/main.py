@@ -29,15 +29,14 @@ while True:
     # 3. Aguardar comandos do teclado
     key = cv2.waitKey(1)
     
-    # Se pressionar 's', salva a foto
+    # Se pressionar 'ENTER', salva a foto
     if key == 13:
         nome_foto = os.path.join(pasta_destino, "foto.jpg")
         cv2.imwrite(nome_foto, frame)
         print(f"Foto salva em: {nome_foto}")
-        break # Opcional: sair após tirar a foto
+        break
         
-    # Se pressionar 'q', sai do programa
-    elif key == ord('q'):
+    elif key == 27:
         break
 
 # 4. Liberar a câmera e fechar janelas

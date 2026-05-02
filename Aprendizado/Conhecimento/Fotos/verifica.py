@@ -35,7 +35,7 @@ while True:
     if contador_frames % 30 == 0:
         autorizado, nome_arquivo = verificar_acesso(frame)
         if autorizado:
-            status_texto = f"ACESSO LIBERADO"
+            status_texto = "ACESSO LIBERADO"
             cor_status = (0, 255, 0)
         else:
             status_texto = "ACESSO NEGADO"
@@ -46,7 +46,8 @@ while True:
     cv2.putText(frame, status_texto, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, cor_status, 2)
     cv2.imshow("Acesso Facial", frame)
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    # ESC
+    if cv2.waitKey(1) & 0xFF == 27:
         break
 
 cap.release()
