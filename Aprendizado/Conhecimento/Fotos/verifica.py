@@ -46,7 +46,7 @@ while True:
     cv2.putText(frame, status_texto, (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, cor_status, 2)
     cv2.imshow("Acesso Facial", frame)
 
-    # ESC
+    # ESC 
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
