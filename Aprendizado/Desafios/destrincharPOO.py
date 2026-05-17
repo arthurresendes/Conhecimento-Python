@@ -48,7 +48,6 @@ class Products:
 class Orders:
     def __init__(self, db):
         self.db = db
-
     def create_order(self, user_id):
         order = {
             "id": str(uuid.uuid4()),
