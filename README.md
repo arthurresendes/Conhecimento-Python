@@ -30,6 +30,9 @@ Este repositório reúne diversos subdiretórios que representam etapas, conceit
 
 - **Bibliotecas**  
   Exemplos de uso de bibliotecas populares como datetime, os, sys, requests, pandas, entre outras.
+  
+- **Leetocde**  
+  Desafios leetcode desenvolvidos em python.
 
 ---
 
