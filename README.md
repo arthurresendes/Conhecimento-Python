@@ -1,357 +1,183 @@
-.gitattributes
-  Configuração para detecção de arquivos de texto e normalização de finais de linha.
+# Conhecimento-Python
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-100%25-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Estudo-Exerc%C3%ADcios%20%26%20Desafios-FFD43B?style=for-the-badge" alt="Study" />
+</div>
+
+Repositório pessoal de estudos em Python, organizado como um caderno de aprendizagem com exercícios, exemplos práticos, desafios de lógica e projetos focados em conceitos da linguagem e suas bibliotecas.
+
+Este projeto reúne conteúdos básicos, intermediários e avançados, cobrindo desde sintaxe e estruturas fundamentais até POO, tratamento de erros, arquivos, JSON/CSV, Pandas, testes e desafios de programação.
+
+## 📌 Objetivo
+
+Documentar e praticar o aprendizado em Python de forma organizada, com foco em:
+
+- fundamentos da linguagem
+- estruturas de dados
+- funções e módulos
+- orientação a objetos
+- manipulação de arquivos e dados
+- bibliotecas e análise de dados
+- resolução de desafios e exercícios
+
+## 🧭 Estrutura do repositório
+
+```text
+Conhecimento-Python/
+├── .gitattributes
+├── README.md
+├── alunos.csv
+├── files.csv
+├── produtos.csv
+├── Aprendizado/
+│   ├── arquivo.txt
+│   ├── arquivo.json
+│   ├── informacoes.csv
+│   ├── informacoes.json
+│   ├── prods.json
+│   ├── Basico_Exercicios/
+│   │   ├── Desafios/
+│   │   ├── ExerciciosCurso/
+│   │   └── ExerciciosDiversos/
+│   ├── Conhecimento/
+│   │   ├── Arquivos/
+│   │   ├── CSV e JSON/
+│   │   ├── Coleções/
+│   │   ├── Condição/
+│   │   ├── Decoradores/
+│   │   ├── Funções/
+│   │   ├── Funções Integradas/
+│   │   ├── Introdução/
+│   │   ├── PANDAS/
+│   │   ├── POO/
+│   │   ├── Testes/
+│   │   ├── Tipagem/
+│   │   ├── TratandoErros/
+│   │   ├── loops/
+│   │   └── ...
+│   └── Desafios/
+│       ├── LeetCode/
+│       ├── cinema.py
+│       ├── love.py
+│       ├── pares.py
+│       └── tabuada.py
+└──
+```
+
+## 🗂️ Conteúdo principal
+
+### 1) Aprendizado/Conhecimento
+Nesta pasta estão os estudos conceituais da linguagem Python. Entre os temas abordados, há:
+
+- variáveis e tipos
+- condicionais e estruturas lógicas
+- loops e iterações
+- coleções: listas, tuplas, dicionários, conjuntos
+- compreensão de listas e dicionários
+- funções, decorators e funções integradas
+- tratamento de erros
+- arquivos, CSV e JSON
+- módulos e pacotes
+- iteradores e geradores
+- programação orientada a objetos
+- Pandas para análise de dados
+- testes e assertivas
+- tipagem e recursos modernos do Python
+
+Exemplos de pastas presentes:
+
+- `Arquivos/`
+- `CSV e JSON/`
+- `Coleções/`
+- `Comprehensios/`
+- `Datetime/`
+- `Decoradores/`
+- `Funções/`
+- `Funções Integradas/`
+- `PANDAS/`
+- `POO/`
+- `Modulos/`
+- `Testes/`
 
-README.md
-  Descrição geral do repositório e dos temas estudados.
+### 2) Aprendizado/Basico_Exercicios
+Aqui ficam os exercícios mais voltados para prática e raciocínio. A estrutura é bem didática e separa por temas e níveis:
 
-alunos.csv
-  Dados de alunos e duas notas.
+- exercícios básicos
+- listas e loops
+- estruturas condicionais
+- funções
+- arquivos
+- dicionários
+- orientação a objetos
+- decoradores
+- módulos
+- compreensões
+- testes unitários
 
-files.csv
-  Dados de filmes, gêneros e duração.
+Há também subpastas como:
 
-produtos.csv
-  Dados de produtos, preços e estoque.
+- `Desafios/`
+- `ExerciciosCurso/`
+- `ExerciciosDiversos/`
 
-Aprendizado/
-  Arquivos de exemplo e todo o material de estudos.
+### 3) Aprendizado/Desafios
+Nesta área estão desafios independentes e soluções mais específicas, incluindo:
 
-  arquivo.txt
-    Texto simples com “ola mundo”.
+- problemas lógicos
+- exercícios de programação
+- desafios de estrutura e algoritmo
+- diretório `LeetCode/` com resoluções de problemas clássicos
 
-  arquivo.json
-    Dados de Arthur Resende com ID, nome e idade.
+## 🧪 Arquivos CSV e dados de exemplo
 
-  informacoes.csv
-    Registros com nome, idade e cidade.
+O repositório também contém alguns arquivos CSV e dados de demonstração:
 
-  informacoes.json
-    Os mesmos tipos de registros de pessoas em JSON.
+- `alunos.csv` — dados de alunos e notas
+- `files.csv` — dados de filmes, gêneros e duração
+- `produtos.csv` — dados de produtos, preços e estoque
 
-  prods.json
-    Produtos, preços e quantidades de clientes.
+Esses arquivos aparecem em vários exercícios de leitura, escrita, conversão e manipulação de dados.
 
-  Basico_Exercicios/
-    Exercícios introdutórios e diversos exercícios práticos.
+## 🚀 Como usar
 
-    Desafios/
-      Exercícios sobre variáveis, estruturas de repetição, listas,
-      strings, matrizes, forca e validação de triângulos.
+Como o foco principal é aprendizado, a maioria dos scripts é executada diretamente com Python:
 
-      Variaveis/
-        Exercícios 001.py até 004.py.
+```bash
+python nome_do_arquivo.py
+```
 
-      for/
-        Exercícios com for para listas, range e strings.
+Exemplo:
 
-      desafio001.py até desafio004.py
+```bash
+python Aprendizado/Conhecimento/Introdução/loops/for001.py
+```
 
-      forca.py
-      matriz5por5.py
-      verificaTriangulo.py
+## ✅ Perfil deste repositório
 
-    ExerciciosCurso/
-      Exercícios organizados por assuntos de um curso.
+Este repositório é:
 
-      Arquivo/
-        Leitura e escrita de arquivos, incluindo arq.txt.
+- um acervo de estudos em Python
+- um ambiente para prática de exercícios
+- uma base de exemplos organizados por assunto
+- uma jornada de aprendizado, não um software de produção
 
-      Decorators/
-        Decoradores para contagem, transformação de texto,
-        multiplicação, validação, saudação, tempo e argumentos.
+## 🧠 Tecnologias e temas presentes
 
-      Funcoes/
-        Funções, parâmetros, listas e datas de aniversário.
+- Python 3
+- Estruturas de dados
+- Programação procedural e orientada a objetos
+- Manipulação de arquivos
+- CSV, JSON, Pickle
+- Pandas
+- Decoradores
+- Testes com `assert` e `unittest`
+- Lógica e resolução de problemas
 
-      Listas/
-        Exercícios de manipulação de listas.
+## 📚 Observação
 
-      POO/
-        Exemplos com agenda, pessoa e televisão.
+O projeto é uma organização pessoal de conhecimento acadêmico e prático. A estrutura foi pensada para facilitar a revisão e a navegação por tópicos em Python, mantendo os exercícios e os exemplos em ordem de estudo.
 
-      loops/
-        Exercícios usando for e while.
+---
 
-    ExerciciosDiversos/
-      Grande conjunto de exercícios separados por assunto.
-
-      APII/
-        Consulta de CEP.
-
-      Arquivo/
-        Cópia, leitura, escrita, soma, data e processamento
-        de linhas e palavras.
-
-      CSV E JSON/
-        Leitura, escrita e conversão entre CSV e JSON,
-        notas, alunos, produtos e filmes.
-
-        JSONN/
-          Exercícios de manipulação de dados JSON.
-
-      Comprensão/
-        Compreensões de listas, dicionários, conjuntos e
-        listas aninhadas, incluindo operações com matrizes.
-
-      Condição/
-        Condições, IMC, imposto, médias, operações,
-        senha, placa e comparação de números.
-
-      Datetime/
-        Diferença entre datas, hora atual, alteração de horários,
-        nascimento, subtração e pausa de execução.
-
-      Decoretors/
-        Decoradores simples, decoradores com `args` e `kwargs`,
-        cache, contagem, autorização, logs, prefixos,
-        repetição, multiplicação, tempo e conversão para maiúsculas.
-
-      Dicionarios/
-        Dicionários de pessoas, filmes, produtos, usuários,
-        países, meses, carrinhos e operações com chaves.
-
-      Erros/
-        Uso de `raise`, `try`, `except`, `else` e `finally`,
-        incluindo validações de banco, idade, senha, divisão,
-        índices, números e conversões.
-
-      Funcoes/
-        Funções, argumentos nomeados, closures, parâmetros padrão,
-        retornos, calculadoras, médias, tabuada, números,
-        vogais, intervalos, `args` e `kwargs`.
-
-      FunçõesIntegradas/
-        Exercícios com `abs`, `all`, `any`, `filter`, `lambda`,
-        `len`, `map`, `max`, `min`, `reduce`, `reversed`,
-        `round`, `sorted`, `sum` e `zip`.
-
-      Generatorr/
-        Geradores para contagem regressiva e números pares.
-
-      Iterador/
-        Iteradores de listas, dicionários, tuplas, nomes e
-        criação de loops próprios.
-
-      POO/
-        Classes, objetos, abstração, encapsulamento, herança simples
-        e múltipla, getters e setters, veículos, contas, animais,
-        biblioteca, carrinho, estoque, escola, livros, produtos,
-        playlist e retângulos.
-
-      Recursos/
-        Uso de `Literal`, `Union` e outros recursos de tipagem.
-
-      Testes/
-        Testes com `assert`, doctest, testes unitários e exemplos
-        de unidades de teste.
-
-      Tipagem/
-        Tipagem dinâmica e estática, anotações, tipos inteiros,
-        strings, opcionais, concatenação, médias e operações.
-
-      basico/
-        Exercícios básicos de anagramas, cadastro, conversão de texto,
-        jogo de adivinhação, listas, matrizes, menu, login,
-        raiz quadrada, conjuntos, temperatura e pausas.
-
-      collections/
-        Exercícios com `Counter`, `defaultdict`, `deque`,
-        `namedtuple` e ordenação.
-
-      estrturaDados/
-        Fila, pilha e ordenação.
-
-      listas/
-        Operações com listas, cópia, inserção, remoção,
-        ordenação, reversão, soma, conversão e iteração.
-
-      loops/
-        Loops `for`, `while` e `while True`, com exercícios
-        de tabuada, jogos, senhas, banco, calculadora,
-        notas, preços e contadores.
-
-      modulos/
-        Uso de módulos para sorteios, dados, cores, senhas,
-        listas, Mega-Sena, cara ou coroa e contagens.
-
-  Conhecimento/
-    Exemplos organizados por conceitos específicos da linguagem.
-
-    Arquivos/
-      Leitura, escrita, modos de abertura, navegação,
-      cursor, `seek`, `with`, `StringIO` e manipulação de arquivos.
-      Também há arquivos de texto usados nos exemplos.
-
-    CSV e JSON/
-      Leitura e escrita de CSV e JSON, uso de API JSON,
-      serialização com `pickle` e arquivo CSV de lutadores.
-      Também contém arquivos `.pyc` em `__pycache__`.
-
-    Coleções/
-      Listas, tuplas, conjuntos, dicionários, mapas e recursos
-      de `collections`: `Counter`, `defaultdict`, `deque`,
-      `OrderedDict` e `namedtuple`.
-
-    Comprehensios/
-      Compreensões de listas, dicionários, conjuntos,
-      listas aninhadas e separação entre pares e ímpares.
-
-    Condição/
-      Exemplos de condições e estruturas lógicas.
-
-    Datetime/
-      Introdução ao módulo, diferenças de tempo e dias.
-
-    Decoradores/
-      Decoradores, `args`, `kwargs`, assinaturas diferentes,
-      metadados, validação e forçamento de dados.
-
-    Fotos/
-      Manipulação e verificação de imagem, com `main.py`,
-      `verifica.py` e `imagens/foto.jpg`.
-
-    Funções/
-      Definição de funções, parâmetros, retornos, `args`,
-      `kwargs`, documentação com docstrings, parâmetros opcionais,
-      funções contínuas e funções assíncronas.
-
-    Funções Integradas/
-      Exemplos separados para `all`, `any`, `filter`, `generator`,
-      `lambda`, `len`, `abs`, `sum`, `round`, `map`, `min`,
-      `max`, `reduce`, `reversed`, `sorted` e `zip`.
-
-    Introdução/
-      PEP 8, `dir`, `help`, entrada de dados e loops `for`,
-      `while`, `range` e `break`.
-
-    Iterador/
-      Iteráveis, iteradores, criação de loops próprios e geradores
-      de fatorial, Fibonacci e controle de tempo.
-
-    Memoria/
-      GIL, multiprocessing e multithreading.
-      Também contém arquivo compilado em `__pycache__`.
-
-    Modulos/
-      Instalação e organização de módulos e pacotes,
-      `__name__ == "__main__"` e uso de `random`.
-      Também contém arquivo compilado em `__pycache__`.
-
-    Novos Recursos/
-      F-strings, dados precisos, matemática, metadados,
-      argumentos posicionais e outros recursos.
-
-    Ordenacao/
-      Implementação de ordenação por seleção.
-
-    PANDAS/
-      Estudos e exercícios de análise e manipulação de dados.
-
-      Dataframes/
-        Leitura, concatenação, filtros e soma de idades,
-        além de uma planilha Excel.
-
-      Exercicios/
-        Exercícios de `DataRange`, `GroupBy`, `Joins`,
-        limpeza de dados, exercícios práticos, reshaping
-        com `pivot` e contagem de valores.
-
-      Filtragem/
-        Uso de `apply`.
-
-      Graficos/
-        Gráficos de barras, linhas, pizza e combinação de gráficos.
-
-      Indexação/
-        Arrays, produtos e transposição.
-
-      Limpeza de dados/
-        Dados únicos, ordenação, reindexação e sumarização.
-
-      Localizando dados/
-        Localização booleana de linhas e colunas.
-
-      Merge/
-        `merge` e agrupamento com `groupby`.
-
-      Reshaping/
-        `melt`, `pivot`, tabelas dinâmicas, `stack` e `unstack`.
-
-      Testes/
-        Testes com planilhas de alunos, notas e scripts Python.
-
-      visualizandoDados.py
-        Visualização de dados.
-
-    POO/
-      Introdução à orientação a objetos, objetos, atributos,
-      métodos, métodos mágicos, abstração, encapsulamento,
-      getters e setters, herança, herança múltipla, `super`,
-      MRO, animais, jogos e médias de alunos.
-
-    Testes/
-      `assert`, docstrings, testes unitários, atividades,
-      hooks e testes relacionados a um robô.
-      Também contém arquivo compilado em `__pycache__`.
-
-    Tipagem/
-      Anotações, comentários, tipagem dinâmica, comparação entre
-      tipagem dinâmica e estática e exemplos de tipagem.
-
-    TratandoErros/
-      Erros comuns, `try/except`, `raise`, `else`, `finally`
-      e depuração com `pdb`.
-
-    Variaveis/
-      Strings, números, `float`, booleanos e escopo de variáveis.
-
-    loops/
-      Exemplos básicos de `for`, `while`, `range` e `break`.
-
-    mySql/
-      Criação de banco e tabela, inserção, seleção, atualização,
-      exclusão, `drop`, `where`, `order by`, `limit` e `join`.
-
-  Desafios/
-    Desafios independentes e problemas de lógica.
-
-    LeetCode/
-      Soluções para problemas de soma de dois números, soma binária,
-      anagramas, diferença máxima, números felizes, elemento majoritário,
-      repetições, mediana, fusão de listas ordenadas, menor positivo,
-      multiplicação de strings, números reversos e palíndromos,
-      números romanos, posição de elementos, incremento de números,
-      potência, potência de dois, raiz quadrada, remoção de elementos
-      e duplicatas, rotação de listas, busca em listas rotacionadas,
-      inserção, número único, soma de listas, elementos mais frequentes,
-      triângulo, validação de código postal e outras tarefas.
-
-    cinema.py
-      Exercício relacionado a informações de filmes.
-
-    destrincharPOO.py
-      Exercício extenso de análise e prática de POO.
-
-    dia1301/
-      Quatro exercícios numerados.
-
-    dia2112/
-      API de filmes, operações de banco e banco SQLite `banco.db`.
-      Também contém arquivos compilados em `__pycache__`.
-
-    dia_1101/
-      Contagem de palavras, inversão de dicionário,
-      maior valor de cada array, números primos,
-      remoção de duplicatas, segundo maior valor e soma de pares.
-
-    dia_1912/
-      Cinco desafios numerados.
-
-    love.py
-      Pequeno exercício independente.
-
-    pares.py
-      Exercício com números pares.
-
-    tabuada.py
-      Exercício de tabuada.
+Feito para aprender, praticar e evoluir em Python.
